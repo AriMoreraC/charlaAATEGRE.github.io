@@ -1,21 +1,34 @@
+// Detectar si estamos en local o en GitHub Pages
+const isLocal =
+  window.location.hostname === "127.0.0.1" ||
+  window.location.hostname === "localhost";
 
- 
-     //Llamado al HEADER
-fetch("/HTML/Layout/header.html") // Correcto desde WhatsApp
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('idheader').innerHTML = data;
-      })
-      .catch(error => {
-        console.error('Error cargando el header:', error);
-      });
+// Nombre EXACTO de tu repositorio en GitHub
+const repoName = "charlaAATEGRE.github.io";
 
- //Llamado al footer
-fetch("/HTML/Layout/footer.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('idfooter').innerHTML = data;
-      })
-      .catch(error => {
-        console.error('Error cargando el footer:', error);
-      });
+// Base dinámica
+const basePath = isLocal ? "" : `/${repoName}`;
+
+/* =========================
+   HEADER
+========================= */
+fetch(`${basePath}/HTML/Layout/header.html`)
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("idheader").innerHTML = data;
+  })
+  .catch(error => {
+    console.error("Error cargando el header:", error);
+  });
+
+/* =========================
+   FOOTER
+========================= */
+fetch(`${basePath}/HTML/Layout/footer.html`)
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("idfooter").innerHTML = data;
+  })
+  .catch(error => {
+    console.error("Error cargando el footer:", error);
+  });
