@@ -1,13 +1,11 @@
-// Detectar si estamos en local o en GitHub Pages
-const isLocal =
-  window.location.hostname === "127.0.0.1" ||
-  window.location.hostname === "localhost";
+// Detecta automáticamente si hay nombre de repositorio en la URL
+const pathSegments = window.location.pathname.split("/").filter(Boolean);
 
-// Nombre EXACTO de tu repositorio en GitHub
-const repoName = "charlaAATEGRE.github.io";
-
-// Base dinámica
-const basePath = isLocal ? "" : `/${repoName}`;
+// Si estás en GitHub Pages, el primer segmento es el nombre del repo
+const basePath =
+  window.location.hostname.includes("github.io") && pathSegments.length > 0
+    ? `/${pathSegments[0]}`
+    : "";
 
 /* =========================
    HEADER
@@ -15,11 +13,10 @@ const basePath = isLocal ? "" : `/${repoName}`;
 fetch(`${basePath}/HTML/Layout/header.html`)
   .then(response => response.text())
   .then(data => {
-    document.getElementById("idheader").innerHTML = data;
+    const header = document.getElementById("idheader");
+    if (header) header.innerHTML = data;
   })
-  .catch(error => {
-    console.error("Error cargando el header:", error);
-  });
+  .catch(error => console.error("Error cargando header:", error));
 
 /* =========================
    FOOTER
@@ -27,8 +24,7 @@ fetch(`${basePath}/HTML/Layout/header.html`)
 fetch(`${basePath}/HTML/Layout/footer.html`)
   .then(response => response.text())
   .then(data => {
-    document.getElementById("idfooter").innerHTML = data;
+    const footer = document.getElementById("idfooter");
+    if (footer) footer.innerHTML = data;
   })
-  .catch(error => {
-    console.error("Error cargando el footer:", error);
-  });
+  .catch(error => console.error("Error cargando footer:", error));
