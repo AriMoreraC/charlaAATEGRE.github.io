@@ -1,0 +1,36 @@
+:root {
+    --azul-principal: #1A5F9E; 
+ --rosado-acento: #E592BD;
+    --gris-fondo: #F4F6FA;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(3deg, #eef2ff, #f08ec0);
+    background-attachment: fixed;
+    color: #333;
+    position: relative;
+    overflow-x: hidden;
+}
+
+  footer {
+    background-color: #1A5F9E; 
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  footer p {
+    margin: 0;
+  }
+      .fade-in {
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuraciones Básicas</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../CSS/index.css" />
+</head>
+
+<body class="fade-in min-h-screen flex flex-col bg-gradient-to-b from-[#eef2ff] via-[#f0a3c2] to-[#f9f0f8]">
+
+<!-- BOTÓN VOLVER FIJO -->
+<a href="../../index.html"
+   class="fixed bottom-8 right-8 z-[9999] 
+          flex items-center gap-5
+          bg-[var(--azul-principal)] 
+          text-white 
+          px-10 py-5
+          rounded-full
+          border-4 border-[var(--rosado-acento)]
+          shadow-2xl
+          text-3xl font-extrabold
+          hover:bg-[var(--rosado-acento)]
+          hover:border-[var(--azul-principal)]
+          hover:scale-110
+          transition-all duration-300 ease-in-out">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       class="w-9 h-9"
+       fill="none"
+       viewBox="0 0 24 24"
+       stroke-width="2.5"
+       stroke="currentColor">
+    <path stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5" />
+  </svg>
+
+  Volver a Inicio
+</a>
+
+<!-- HEADER -->
+<div id="idheader"></div>
+
+<!-- MAIN -->
+<main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 py-16">
+  <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+
+    <!-- CARD Volumen -->
+    <div class="bg-white rounded-3xl shadow-xl border-t-8 border-pink-300 flex flex-col items-center p-10 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl min-h-[500px]">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32 text-[var(--rosado-acento)] mb-6" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M11 5l6 7-6 7V5z" />
+      </svg>
+      <h2 class="text-5xl font-bold text-[var(--azul-principal)] mb-6 text-center">Volumen</h2>
+      <p class="text-3xl leading-relaxed text-center mb-8">Ajuste fácil del volumen de llamadas y multimedia.</p>
+      <a href="#" class="bg-[var(--azul-principal)] text-white text-4xl font-extrabold px-16 py-6 rounded-2xl shadow-lg hover:shadow-[0_0_25px_var(--rosado-acento)] hover:scale-105 transition-all">
+        Ingresar
+      </a>
+    </div>
+
+    <!-- CARD Brillo -->
+    <div class="bg-white rounded-3xl shadow-xl border-t-8 border-pink-300 flex flex-col items-center p-10 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl min-h-[500px]">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32 text-[var(--rosado-acento)] mb-6" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v3m0 12v3m9-9h-3M6 12H3m15.364-6.364l-2.121 2.121M6.757 17.657l-2.121 2.121M17.657 17.657l-2.121-2.121M6.757 6.343L4.636 8.464M12 8a4 4 0 100 8 4 4 0 000-8z" />
+      </svg>
+      <h2 class="text-5xl font-bold text-[var(--azul-principal)] mb-6 text-center">Brillo</h2>
+      <p class="text-3xl leading-relaxed text-center mb-8">Controle la intensidad de la pantalla fácilmente.</p>
+      <a href="#" class="bg-[var(--azul-principal)] text-white text-4xl font-extrabold px-16 py-6 rounded-2xl shadow-lg hover:shadow-[0_0_25px_var(--rosado-acento)] hover:scale-105 transition-all">
+        Ingresar
+      </a>
+    </div>
+
+    <!-- CARD Tamaño de Letra -->
+    <div class="bg-white rounded-3xl shadow-xl border-t-8 border-pink-300 flex flex-col items-center p-10 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl min-h-[500px]">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32 text-[var(--rosado-acento)] mb-6" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+      <h2 class="text-5xl font-bold text-[var(--azul-principal)] mb-6 text-center">Tamaño de Letra</h2>
+      <p class="text-3xl leading-relaxed text-center mb-8">Aumente el tamaño de letra para leer con facilidad.</p>
+      <a href="#" class="bg-[var(--azul-principal)] text-white text-4xl font-extrabold px-16 py-6 rounded-2xl shadow-lg hover:shadow-[0_0_25px_var(--rosado-acento)] hover:scale-105 transition-all">
+        Ingresar
+      </a>
+    </div>
+
+    <!-- CARD Teclado -->
+    <div class="bg-white rounded-3xl shadow-xl border-t-8 border-pink-300 flex flex-col items-center p-10 transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl min-h-[500px]">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32 text-[var(--rosado-acento)] mb-6" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 9h18M3 15h18M5 21h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2z" />
+      </svg>
+      <h2 class="text-5xl font-bold text-[var(--azul-principal)] mb-6 text-center">Teclado</h2>
+      <p class="text-3xl leading-relaxed text-center mb-8">Configure el teclado y accesos rápidos fácilmente.</p>
+      <a href="#" class="bg-[var(--azul-principal)] text-white text-4xl font-extrabold px-16 py-6 rounded-2xl shadow-lg hover:shadow-[0_0_25px_var(--rosado-acento)] hover:scale-105 transition-all">
+        Ingresar
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<div id="idfooter"></div>
+
+</body>
+<script src="/JS/layout.js"></script>
+</html>

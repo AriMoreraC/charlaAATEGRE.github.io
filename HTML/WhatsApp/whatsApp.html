@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WhatsApp - Uso Correcto del Celular</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../../CSS/index.css" />
+</head>
+
+<body class="fade-in min-h-screen flex flex-col bg-gradient-to-b from-[#eef2ff] via-[#f0a3c2] to-[#f9f0f8]">
+
+<!-- BOTÓN VOLVER FIJO -->
+<!-- BOTÓN VOLVER FIJO -->
+<a href="../../index.html"
+   class="fixed bottom-8 right-8 z-[9999] 
+          flex items-center gap-5
+          bg-[var(--azul-principal)] 
+          text-white 
+          px-10 py-5
+          rounded-full
+          border-4 border-[var(--rosado-acento)]
+          shadow-2xl
+          text-3xl font-extrabold
+          hover:bg-[var(--rosado-acento)]
+          hover:border-[var(--azul-principal)]
+          hover:scale-110
+          transition-all duration-300 ease-in-out">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       class="w-9 h-9"
+       fill="none"
+       viewBox="0 0 24 24"
+       stroke-width="2.5"
+       stroke="currentColor">
+    <path stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5" />
+  </svg>
+
+  Volver a Inicio
+</a>
+
+
+
+<!-- HEADER -->
+<div id="idheader"></div>
+
+<!-- MAIN -->
+<main class="flex-grow max-w-7xl mx-auto px-6 py-16">
+
+  <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+    <!-- CARD Mensajes -->
+    <div class="bg-white rounded-3xl shadow-xl border-t-8 border-[var(--rosado-acento)] flex flex-col items-center p-10 transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl min-h-[520px]">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-28 h-28 text-[var(--rosado-acento)] mb-6" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.864 9.864 0 01-4.872-1.3L3 21l1.3-4.128A9.864 9.864 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+      </svg>
+      <h2 class="text-5xl font-bold text-[var(--azul-principal)] mb-6 text-center">Mensajes</h2>
+      <p class="text-3xl leading-relaxed text-center mb-8">Envíe mensajes de texto a sus contactos fácilmente.</p>
+      <a href="#" class="bg-[var(--azul-principal)] text-white text-3xl font-extrabold px-14 py-5 rounded-2xl shadow-lg hover:bg-[var(--rosado-acento)] hover:scale-105 transition-all w-full text-center max-w-[340px]">
+        Ingresar
+      </a>
+    </div>
+
+    <!-- CARD Fotos y Audios -->
+    <div class="bg-white rounded-3xl shadow-xl border-t-8 border-[var(--rosado-acento)] flex flex-col items-center p-10 transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl min-h-[520px]">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-28 h-28 text-[var(--rosado-acento)] mb-6" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h18M3 19h18M4 12h16M12 4v16M16 8l-4 4-4-4"/>
+      </svg>
+      <h2 class="text-5xl font-bold text-[var(--azul-principal)] mb-6 text-center">Fotos y Audios</h2>
+      <p class="text-3xl leading-relaxed text-center mb-8">Envíe fotos, videos y grabaciones de voz de manera sencilla.</p>
+      <a href="#" class="bg-[var(--azul-principal)] text-white text-3xl font-extrabold px-14 py-5 rounded-2xl shadow-lg hover:bg-[var(--rosado-acento)] hover:scale-105 transition-all w-full text-center max-w-[340px]">
+        Ingresar
+      </a>
+    </div>
+
+    <!-- CARD Llamadas -->
+    <div class="bg-white rounded-3xl shadow-xl border-t-8 border-[var(--rosado-acento)] flex flex-col items-center p-10 transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl min-h-[520px]">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-28 h-28 text-[var(--rosado-acento)] mb-6" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M2.003 5.884l.88-2.488A2 2 0 015.798 2h2.422c.4 0 .757.24.91.615l1.085 2.72a2 2 0 01-.45 2.2l-1.516 1.516a16.032 16.032 0 006.95 6.95l1.516-1.516a2 2 0 012.2-.45l2.72 1.085c.375.153.615.51.615.91v2.422a2 2 0 01-1.396 1.914l-2.488.88a2 2 0 01-2.16-.516l-2.32-2.32a18.044 18.044 0 01-7.233-7.233l-2.32-2.32a2 2 0 01-.516-2.16z"/>
+      </svg>
+      <h2 class="text-5xl font-bold text-[var(--azul-principal)] mb-6 text-center">Llamadas</h2>
+      <p class="text-3xl leading-relaxed text-center mb-8">Realice llamadas de voz y video fácilmente con sus contactos.</p>
+      <a href="#" class="bg-[var(--azul-principal)] text-white text-3xl font-extrabold px-14 py-5 rounded-2xl shadow-lg hover:bg-[var(--rosado-acento)] hover:scale-105 transition-all w-full text-center max-w-[340px]">
+        Ingresar
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<div id="idfooter"></div>
+
+<script src="/JS/layout.js"></script>
+</body>
+</html>
