@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ajustar Brillo</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="../../CSS/index.css" />
+</head>
+
+<body class="min-h-screen flex flex-col bg-gradient-to-b from-[#eef2ff] via-[#f0a3c2] to-[#f9f0f8]">
+<!-- BOTÓN VOLVER FIJO -->
+<a href="./configuracionBasica.html"
+   class="fixed bottom-8 right-8 z-[9999] 
+          flex items-center gap-5
+          bg-[var(--azul-principal)] 
+          text-white 
+          px-10 py-5
+          rounded-full
+          border-4 border-[var(--rosado-acento)]
+          shadow-2xl
+          text-3xl font-extrabold
+          hover:bg-[var(--rosado-acento)]
+          hover:border-[var(--azul-principal)]
+          hover:scale-110
+          transition-all duration-300 ease-in-out">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       class="w-9 h-9"
+       fill="none"
+       viewBox="0 0 24 24"
+       stroke-width="2.5"
+       stroke="currentColor">
+    <path stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5" />
+  </svg>
+
+  Volver 
+</a>
+<!-- HEADER -->
+<header class="text-white text-center py-14 shadow-lg"
+        style="background-color: var(--azul-principal)">
+  
+  <h1 class="text-6xl font-bold mb-4">
+    Ajustar el Brillo
+  </h1>
+
+  <p class="text-3xl opacity-95">
+    Aprenda a aclarar u oscurecer la pantalla del celular
+  </p>
+
+</header>
+
+<!-- CONTENIDO -->
+<main class="flex-grow max-w-6xl mx-auto px-6 py-16 space-y-16">
+
+<!-- PASO 1 -->
+<div class="grid md:grid-cols-2 gap-10 items-center bg-white p-10 rounded-3xl shadow-xl">
+
+  <div>
+    <span class="text-6xl font-bold text-[var(--rosado-acento)]">1</span>
+
+    <h2 class="text-4xl font-bold mt-4 mb-4"
+        style="color: var(--azul-principal)">
+      Abra el panel rápido
+    </h2>
+
+    <p class="text-3xl leading-relaxed">
+      Deslice el dedo desde la parte superior de la pantalla
+      hacia abajo.
+    </p>
+  </div>
+
+   <img 
+  src="../../img/captura4.jpeg"
+  alt="Teclado del celular"
+  class="w-full h-82 object-cover rounded-2xl shadow-lg"
+/>
+  
+
+</div>
+
+
+<!-- PASO 2 -->
+<div class="grid md:grid-cols-2 gap-10 items-center bg-white p-10 rounded-3xl shadow-xl">
+
+   <img 
+  src="../../img/captura5.jpeg"
+  alt="Teclado del celular"
+  class="w-full h-82 object-cover rounded-2xl shadow-lg"
+/>
+  
+
+  <div class="order-1 md:order-2">
+    <span class="text-6xl font-bold text-[var(--rosado-acento)]">2</span>
+
+    <h2 class="text-4xl font-bold mt-4 mb-4"
+        style="color: var(--azul-principal)">
+      Busque la barra de brillo
+    </h2>
+
+    <p class="text-3xl leading-relaxed">
+      En el panel aparecerá una barra con un ícono de sol.
+    </p>
+  </div>
+
+</div>
+
+
+<!-- PASO 3 -->
+<div class="grid md:grid-cols-2 gap-10 items-center bg-white p-10 rounded-3xl shadow-xl">
+
+  <div>
+    <span class="text-6xl font-bold text-[var(--rosado-acento)]">3</span>
+
+    <h2 class="text-4xl font-bold mt-4 mb-4"
+        style="color: var(--azul-principal)">
+      Ajuste el brillo
+    </h2>
+
+    <p class="text-3xl leading-relaxed">
+      Deslice la barra hacia la derecha para aumentar el brillo
+      o hacia la izquierda para disminuirlo.
+    </p>
+  </div>
+
+   <img 
+  src="../../img/captura6.jpeg"
+  alt="Teclado del celular"
+  class="w-full h-82 object-cover rounded-2xl shadow-lg"
+/>
+  
+
+</div>
+
+
+<!-- PASO 4 -->
+<div class="bg-white p-10 rounded-3xl shadow-xl text-center">
+
+  <span class="text-6xl font-bold text-[var(--rosado-acento)]">4</span>
+
+  <h2 class="text-4xl font-bold mt-4 mb-4"
+      style="color: var(--azul-principal)">
+    Pruebe el brillo
+  </h2>
+
+  <p class="text-3xl leading-relaxed max-w-3xl mx-auto">
+    Ajuste el brillo hasta que la pantalla se vea cómoda
+    para sus ojos.
+  </p>
+
+</div>
+
+
+<!-- BOTÓN VOLVER -->
+
+</main>
+
+
+<!-- FOOTER -->
+<div id="idfooter"></div>
+
+<script src="../../JS/layout.js"></script>
+
+</body>
+</html>
