@@ -1,18 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WhatsApp - Uso Correcto del Celular</title>
+  <title>Uso Correcto del Celular - WhatsApp</title>
+
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="../../CSS/index.css" />
+
 </head>
 
-<body class="fade-in min-h-screen flex flex-col bg-gradient-to-b from-[#eef2ff] via-[#f0a3c2] to-[#f9f0f8]">
-
-<!-- BOTÓN VOLVER FIJO -->
-<!-- BOTÓN VOLVER FIJO -->
-<a href="../../index.html"
+  <body
+    class="min-h-screen flex flex-col bg-gradient-to-b from-[#eef2ff] via-[#dddddd] to-[#fff4f4] fade-in"
+  >
+  <!-- BOTÓN VOLVER FIJO -->
+<a href="../../index.html#temas"
    class="fixed bottom-8 right-8 z-[9999] 
           flex items-center gap-5
           bg-[var(--azul-principal)] 
@@ -40,59 +43,142 @@
 
   Volver a Inicio
 </a>
-
-
-
-<!-- HEADER -->
-<div id="idheader"></div>
-
-<!-- MAIN -->
-<main class="flex-grow max-w-7xl mx-auto px-6 py-16">
-
-  <div class="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-
-    <!-- CARD Mensajes -->
-    <div class="bg-white rounded-3xl shadow-xl border-t-8 border-[var(--rosado-acento)] flex flex-col items-center p-10 transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl min-h-[520px]">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-28 h-28 text-[var(--rosado-acento)] mb-6" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.864 9.864 0 01-4.872-1.3L3 21l1.3-4.128A9.864 9.864 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
-      </svg>
-      <h2 class="text-5xl font-bold text-[var(--azul-principal)] mb-6 text-center">Mensajes</h2>
-      <p class="text-3xl leading-relaxed text-center mb-8">Envíe mensajes de texto a sus contactos fácilmente.</p>
-      <a href="#" class="bg-[var(--azul-principal)] text-white text-3xl font-extrabold px-14 py-5 rounded-2xl shadow-lg hover:bg-[var(--rosado-acento)] hover:scale-105 transition-all w-full text-center max-w-[340px]">
-        Ingresar
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 bg-white/75 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-3 text-2xl lg:text-3xl font-extrabold text-gray-900">
+        <svg class="w-10 h-10 text-[var(--rosado-secundario)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+          <line x1="12" y1="18" x2="12.01" y2="18"></line>
+        </svg>
+        Aprende a usar el Celular
       </a>
+      
+      <nav class="hidden md:flex items-center gap-2">
+        <a href="../../index.html" class="nav-link active px-5 py-3 rounded-full font-bold text-gray-600 hover:text-[var(--azul-gris-fondo)] hover:bg-[var(--azul-secundario)] transition-all text-xl">Inicio</a>
+      </nav>
+
+      <button id="menuBtn" class="md:hidden w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600">
+        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
     </div>
+    
+  </header>
+  <!-- CONTENIDO PRINCIPAL CENTRADO -->
+<main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 py-32">
+    <h1 class="text-5xl font-extrabold mb-12 text-[var(--azul-principal)] text-center">
+      Guía de WhatsApp para Adultos
+    </h1>
 
-    <!-- CARD Fotos y Audios -->
-    <div class="bg-white rounded-3xl shadow-xl border-t-8 border-[var(--rosado-acento)] flex flex-col items-center p-10 transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl min-h-[520px]">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-28 h-28 text-[var(--rosado-acento)] mb-6" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3 5h18M3 19h18M4 12h16M12 4v16M16 8l-4 4-4-4"/>
-      </svg>
-      <h2 class="text-5xl font-bold text-[var(--azul-principal)] mb-6 text-center">Fotos y Audios</h2>
-      <p class="text-3xl leading-relaxed text-center mb-8">Envíe fotos, videos y grabaciones de voz de manera sencilla.</p>
-      <a href="#" class="bg-[var(--azul-principal)] text-white text-3xl font-extrabold px-14 py-5 rounded-2xl shadow-lg hover:bg-[var(--rosado-acento)] hover:scale-105 transition-all w-full text-center max-w-[340px]">
-        Ingresar
-      </a>
+    <div class="w-full flex flex-col gap-6">
+
+      <!-- MENSAJES -->
+      <div class="bg-white rounded-3xl shadow-xl border-t-8 border-[var(--azul-principal)] overflow-hidden">
+        <button onclick="toggle('mensajes', this)" class="w-full flex items-center justify-between p-8 md:p-10 text-left hover:bg-blue-50 transition-all duration-300">
+          <div class="flex items-center gap-6">
+            <div class="w-20 h-20 rounded-3xl bg-[var(--azul-secundario)] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-[var(--azul-principal)]" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h6m-2 8c4.418 0 8-3.134 8-7 0-3.866-3.582-7-8-7S3 9.134 3 13c0 1.386.458 2.677 1.25 3.77L3 21l4.23-1.25A7.963 7.963 0 0011 20z"/>
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--azul-principal)]">Mensajes</h2>
+              <p class="text-xl md:text-2xl text-gray-500">Enviar mensajes de texto</p>
+            </div>
+          </div>
+          <span class="icon text-4xl font-bold text-[var(--azul-principal)]">+</span>
+        </button>
+        <div id="mensajes" class="hidden px-8 md:px-10 pb-8 md:pb-10 text-lg md:text-2xl text-gray-600">
+        <div id="seccion-mensajes"></div>
+      </div>
+
+      <!-- MULTIMEDIA -->
+      <div class="bg-white rounded-3xl shadow-xl border-t-8 border-[var(--rosado-acento)] overflow-hidden">
+        <button onclick="toggle('multimedia', this)" class="w-full flex items-center justify-between p-8 md:p-10 text-left hover:bg-pink-50 transition-all duration-300">
+          <div class="flex items-center gap-6">
+            <div class="w-20 h-20 rounded-3xl bg-[var(--rosado-acento)] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16l4-4a3 3 0 014 0l4 4m0 0l2-2a3 3 0 014 0l3 3M7 16l-2 2m2-2h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--rosado-secundario)]">Fotos y Audios</h2>
+              <p class="text-xl md:text-2xl text-gray-500">Enviar multimedia fácilmente</p>
+            </div>
+          </div>
+          <span class="icon text-4xl font-bold text-[var(--rosado-secundario)]">+</span>
+        </button>
+        <div id="multimedia" class="hidden px-8 md:px-10 pb-8 md:pb-10 text-lg md:text-2xl text-gray-600">
+          <ol class="list-decimal pl-6 space-y-4">
+            <li>Presione el ícono de clip</li>
+            <li>Seleccione foto o audio</li>
+            <li>Elija el archivo</li>
+            <li>Envíe</li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- LLAMADAS -->
+      <div class="bg-white rounded-3xl shadow-xl border-t-8 border-[var(--rosado-secundario)] overflow-hidden">
+        <button onclick="toggle('llamadas', this)" class="w-full flex items-center justify-between p-8 md:p-10 text-left hover:bg-pink-100 transition-all duration-300">
+          <div class="flex items-center gap-6">
+            <div class="w-20 h-20 rounded-3xl bg-[var(--rosado-secundario)] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2l2 5-2 2a16 16 0 006 6l2-2 5 2v2a2 2 0 01-2 2h-1C10 20 4 14 4 7V6a2 2 0 01-1-1z"/>
+              </svg>
+            </div>
+            <div>
+              <h2 class="text-3xl md:text-4xl font-extrabold text-[var(--rosado-secundario)]">Llamadas</h2>
+              <p class="text-xl md:text-2xl text-gray-500">Llamadas y videollamadas</p>
+            </div>
+          </div>
+          <span class="icon text-4xl font-bold text-[var(--rosado-secundario)]">+</span>
+        </button>
+        <div id="llamadas" class="hidden px-8 md:px-10 pb-8 md:pb-10 text-lg md:text-2xl text-gray-600">
+          <ol class="list-decimal pl-6 space-y-4">
+            <li>Abra un chat</li>
+            <li>Presione el ícono de llamada</li>
+            <li>Espere respuesta</li>
+          </ol>
+        </div>
+      </div>
+
     </div>
+  </main>
 
-    <!-- CARD Llamadas -->
-    <div class="bg-white rounded-3xl shadow-xl border-t-8 border-[var(--rosado-acento)] flex flex-col items-center p-10 transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl min-h-[520px]">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-28 h-28 text-[var(--rosado-acento)] mb-6" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M2.003 5.884l.88-2.488A2 2 0 015.798 2h2.422c.4 0 .757.24.91.615l1.085 2.72a2 2 0 01-.45 2.2l-1.516 1.516a16.032 16.032 0 006.95 6.95l1.516-1.516a2 2 0 012.2-.45l2.72 1.085c.375.153.615.51.615.91v2.422a2 2 0 01-1.396 1.914l-2.488.88a2 2 0 01-2.16-.516l-2.32-2.32a18.044 18.044 0 01-7.233-7.233l-2.32-2.32a2 2 0 01-.516-2.16z"/>
-      </svg>
-      <h2 class="text-5xl font-bold text-[var(--azul-principal)] mb-6 text-center">Llamadas</h2>
-      <p class="text-3xl leading-relaxed text-center mb-8">Realice llamadas de voz y video fácilmente con sus contactos.</p>
-      <a href="#" class="bg-[var(--azul-principal)] text-white text-3xl font-extrabold px-14 py-5 rounded-2xl shadow-lg hover:bg-[var(--rosado-acento)] hover:scale-105 transition-all w-full text-center max-w-[340px]">
-        Ingresar
-      </a>
-    </div>
+  <!-- FOOTER ORIGINAL QUE TENÉS -->
+<!-- FOOTER ORIGINAL AMPLIADO -->
+<div id="idfooter" class="w-full"></div>
 
-  </div>
-</main>
+  <!-- SCRIPT ACORDEÓN -->
+  <script>
+    function toggle(id, btn) {
+      const content = document.getElementById(id);
+      const isHidden = content.classList.contains('hidden');
 
-<!-- FOOTER -->
-<div id="idfooter"></div>
+      // Cerrar todo
+      document.querySelectorAll('#mensajes, #multimedia, #llamadas').forEach(div => {
+        if(div !== content) div.classList.add('hidden');
+      });
 
-<script src="../../JS/layout.js"></script>
+      // Cambiar signo + / -
+      document.querySelectorAll('.icon').forEach(icon => icon.textContent = '+');
+
+      // Abrir o cerrar
+      if (isHidden) {
+        content.classList.remove('hidden');
+        btn.querySelector('.icon').textContent = '-';
+      } else {
+        content.classList.add('hidden');
+        btn.querySelector('.icon').textContent = '+';
+      }
+    }
+  </script>
+  <script src="../../JS/layout.js"></script>
+
 </body>
 </html>

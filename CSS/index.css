@@ -1,13 +1,16 @@
 :root {
-    --azul-principal: #1A5F9E; 
- --rosado-acento: #E592BD;
+    --azul-principal:#1A5F9E; 
+    --azul-secundario: #a6cef3; 
+ --rosado-acento: #f1a0ca;
+  --rosado-secundario: #be367c;
     --gris-fondo: #F4F6FA;
 }
+
 
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(3deg, #eef2ff, #f08ec0);
+    background: linear-gradient(3deg, #dddddd, #fff4f4);
     background-attachment: fixed;
     color: #333;
     position: relative;
