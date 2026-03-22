@@ -11,13 +11,35 @@ const basePath =
    HEADER
 ========================= */
 fetch(`${basePath}/HTML/Layout/header.html`)
-  .then(response => response.text())
+  .then(res => res.text())
   .then(data => {
     const header = document.getElementById("idheader");
-    if (header) header.innerHTML = data;
-  })
-  .catch(error => console.error("Error cargando header:", error));
+    if (!header) return;
+    header.innerHTML = data;
 
+    // --- Registrar botón solo después de insertar el HTML ---
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    console.log(menuBtn, mobileMenu); // Ahora deben existir
+
+    if (!menuBtn || !mobileMenu) {
+      console.error("No se encontró el botón o el menú móvil");
+      return;
+    }
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+      console.log("Menú toggleado");
+    });
+
+    mobileMenu.querySelectorAll(".mobile-link").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+    });
+  })
+  .catch(err => console.error(err));
 /* =========================
    FOOTER
 ========================= */

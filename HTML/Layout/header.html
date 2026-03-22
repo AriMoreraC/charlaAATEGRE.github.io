@@ -1,4 +1,5 @@
-
+<!-- index.html -->
+<body class="min-h-screen bg-gray-50">
   <!-- Header -->
   <header class="fixed top-0 left-0 right-0 bg-white/75 backdrop-blur-md shadow-sm z-50">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
@@ -9,7 +10,8 @@
         </svg>
         Aprende a usar el Celular
       </a>
-      
+
+      <!-- Nav escritorio -->
       <nav class="hidden md:flex items-center gap-2">
         <a href="#inicio" class="nav-link active px-5 py-3 rounded-full font-bold text-gray-600 hover:text-[var(--azul-gris-fondo)] hover:bg-[var(--azul-secundario)] transition-all text-xl">Inicio</a>
         <a href="#temas" class="nav-link px-5 py-3 rounded-full font-bold text-gray-600 hover:text-[var(--azul-gris-fondo)] hover:bg-[var(--azul-secundario)] transition-all text-xl">Temas</a>
@@ -17,6 +19,7 @@
         <a href="#contacto" class="nav-link px-5 py-3 rounded-full font-bold text-gray-600 hover:text-[var(--azul-gris-fondo)] hover:bg-[var(--azul-secundario)] transition-all text-xl">Ayuda</a>
       </nav>
 
+      <!-- Botón menú móvil -->
       <button id="menuBtn" class="md:hidden w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600">
         <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -25,14 +28,27 @@
         </svg>
       </button>
     </div>
-    
-  </header>
 
-  <!-- Mobile Menu -->
-  <div id="mobileMenu" class="fixed top-24 left-4 right-4 bg-white rounded-3xl shadow-2xl p-6 z-40 hidden flex-col gap-3">
-    <a href="#inicio" class="mobile-link block px-6 py-4 text-2xl font-bold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-2xl transition-all">Inicio</a>
-    <a href="#temas" class="mobile-link block px-6 py-4 text-2xl font-bold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-2xl transition-all">Temas</a>
-    <a href="#videos" class="mobile-link block px-6 py-4 text-2xl font-bold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-2xl transition-all">Videos</a>
-    <a href="#contacto" class="mobile-link block px-6 py-4 text-2xl font-bold text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-2xl transition-all">Ayuda</a>
-  </div>
+    <!-- Menú móvil -->
+<div id="mobileMenu" class="fixed top-24 left-4 right-4 bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl p-6 z-50 hidden flex-col gap-4">
+  <a href="#inicio" class="mobile-link block px-6 py-5 text-2xl font-bold text-gray-800 hover:text-white hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 rounded-2xl shadow-md transition-all duration-200">Inicio</a>
+  <a href="#temas" class="mobile-link block px-6 py-5 text-2xl font-bold text-gray-800 hover:text-white hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 rounded-2xl shadow-md transition-all duration-200">Temas</a>
+  <a href="#videos" class="mobile-link block px-6 py-5 text-2xl font-bold text-gray-800 hover:text-white hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 rounded-2xl shadow-md transition-all duration-200">Videos</a>
+  <a href="#contacto" class="mobile-link block px-6 py-5 text-2xl font-bold text-gray-800 hover:text-white hover:bg-gradient-to-r hover:from-blue-400 hover:to-blue-600 rounded-2xl shadow-md transition-all duration-200">Ayuda</a>
+</div>
+  <!-- JS menú móvil -->
+  <script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
 
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+  mobileMenu.querySelectorAll(".mobile-link").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("hidden");
+    });
+  });
+  </script>
+</body>
