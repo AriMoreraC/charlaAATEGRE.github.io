@@ -24,7 +24,7 @@
           rounded-full
           border-4 border-[var(--rosado-acento)]
           shadow-2xl
-          text-3xl font-extrabold
+          text-2xl font-extrabold
           hover:bg-[var(--rosado-acento)]
           hover:border-[var(--azul-principal)]
           hover:scale-110
@@ -113,12 +113,8 @@
           <span class="icon text-4xl font-bold text-[var(--rosado-secundario)]">+</span>
         </button>
         <div id="multimedia" class="hidden px-8 md:px-10 pb-8 md:pb-10 text-lg md:text-2xl text-gray-600">
-          <ol class="list-decimal pl-6 space-y-4">
-            <li>Presione el ícono de clip</li>
-            <li>Seleccione foto o audio</li>
-            <li>Elija el archivo</li>
-            <li>Envíe</li>
-          </ol>
+                   <div id="seccion-fotosAudios"></div>
+        
         </div>
       </div>
 
@@ -139,11 +135,7 @@
           <span class="icon text-4xl font-bold text-[var(--rosado-secundario)]">+</span>
         </button>
         <div id="llamadas" class="hidden px-8 md:px-10 pb-8 md:pb-10 text-lg md:text-2xl text-gray-600">
-          <ol class="list-decimal pl-6 space-y-4">
-            <li>Abra un chat</li>
-            <li>Presione el ícono de llamada</li>
-            <li>Espere respuesta</li>
-          </ol>
+                  <div id="seccion-llamadas"></div>
         </div>
       </div>
 
@@ -186,6 +178,9 @@
   s.setAttribute("data-account", "demo");
   document.body.appendChild(s);
 })();
+var _userway_config = {
+  position: 'bottom-left' // o bottom-right
+};
 </script>
 </body>
 </html>

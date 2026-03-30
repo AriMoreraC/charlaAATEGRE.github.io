@@ -51,7 +51,7 @@ fetch(`${basePath}/HTML/Layout/footer.html`)
   })
   .catch(error => console.error("Error cargando footer:", error));
 /* =========================
-   SECCIONES
+   SECCIONES DE CONFIGURACIÓN BÁSICA
 ========================= */
 
 fetch(`${basePath}/HTML/ConfiguracionBasica/volumen.html`)
@@ -88,7 +88,9 @@ fetch(`${basePath}/HTML/ConfiguracionBasica/teclado.html`)
   });
 
 
-
+/* =========================
+   SECCIONES DE WHATSAPP
+========================= */
 fetch(`${basePath}/HTML/WhatsApp/mensajes.html`)
   .then(res => res.text())
   .then(data => {
@@ -98,10 +100,30 @@ fetch(`${basePath}/HTML/WhatsApp/mensajes.html`)
     }
   });
 
-function mostrarSeccion(id) {
-  // NO ocultar el menú ❌ (quitar esta línea)
-  // document.getElementById("menu").style.display = "none";
+  fetch(`${basePath}/HTML/WhatsApp/fotosyAudios.html`)
+  .then(res => res.text())
+  .then(data => {
+    const contenedor = document.getElementById("seccion-fotosAudios");
+    if (contenedor) {
+      contenedor.innerHTML = data;
+    }
+  });
 
+  fetch(`${basePath}/HTML/WhatsApp/llamadas.html`)
+  .then(res => res.text())
+  .then(data => {
+    const contenedor = document.getElementById("seccion-llamadas");
+    if (contenedor) {
+      contenedor.innerHTML = data;
+    }
+  });
+
+
+/* =========================
+   MOSTRAR O OCULTARSECCIONES DE WHATSAPP
+========================= */
+function mostrarSeccion(id) {
+  // document.getElementById("menu").style.display = "none";
   // Oculta todas las secciones
   const secciones = ["volumen", "brillo", "letra", "teclado"];
   secciones.forEach(sec => {
@@ -113,6 +135,10 @@ function mostrarSeccion(id) {
 
   window.scrollTo({ top: 300, behavior: "smooth" }); // baja un poco al contenido
 }
+
+/* =========================
+   MENU DE SECCIONES DE CONFIGURACIÓN BÁSICA
+========================= */
 function volverMenu() {
   document.getElementById("menu").style.display = "grid";
 

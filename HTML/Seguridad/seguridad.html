@@ -20,7 +20,7 @@
           rounded-full
           border-4 border-[var(--rosado-acento)]
           shadow-2xl
-          text-3xl font-extrabold
+          text-2xl font-extrabold
           hover:bg-[var(--rosado-acento)]
           hover:border-[var(--azul-principal)]
           hover:scale-110
@@ -40,13 +40,34 @@
   Volver a Inicio
 </a>
 
+  <!-- HEADER -->
+  <header class="fixed top-0 left-0 right-0 bg-white/75 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-3 text-2xl lg:text-3xl font-extrabold text-gray-900">
+        <svg class="w-10 h-10 text-[var(--rosado-secundario)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+          <line x1="12" y1="18" x2="12.01" y2="18"></line>
+        </svg>
+        Aprende a usar el Celular
+      </a>
+      
+      <nav class="hidden md:flex items-center gap-2">
+        <a href="../../index.html" class="nav-link active px-5 py-3 rounded-full font-bold text-gray-600 hover:text-[var(--azul-gris-fondo)] hover:bg-[var(--azul-secundario)] transition-all text-xl">Inicio</a>
+      </nav>
 
-  <!-- Fondo decorativo -->
-  <div class="absolute top-0 left-0 w-72 h-72 bg-pink-200 rounded-full blur-3xl opacity-30 -z-10"></div>
-  <div class="absolute bottom-0 right-0 w-96 h-96 bg-blue-200 rounded-full blur-3xl opacity-30 -z-10"></div>
+      <button id="menuBtn" class="md:hidden w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-blue-600">
+        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    
+  </header>
 
   <!-- Banner superior -->
-  <div class="max-w-4xl mx-auto mb-12 sm:mb-16 fade-in">
+<div class="max-w-4xl mx-auto mt-32 sm:mt-36 mb-12 sm:mb-16 fade-in">
     <div class="bg-[var(--azul-principal)] text-white 
                 rounded-2xl px-6 sm:px-10 py-6 shadow-lg 
                 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
@@ -190,7 +211,9 @@
         </ul>
       </div>
     </section>
-
+  </div>
+<div id="idfooter" class="w-full"></div>
+ <script src="../../JS/layout.js"></script>
 <script>
 (function(){
   var s = document.createElement("script");
@@ -198,6 +221,9 @@
   s.setAttribute("data-account", "demo");
   document.body.appendChild(s);
 })();
+var _userway_config = {
+  position: 'bottom-left' // o bottom-right
+};
 </script>
 </body>
 
