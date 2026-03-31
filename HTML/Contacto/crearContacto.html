@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../CSS/index.css" />
+  </head>
+
+  <body class="min-h-screen flex flex-col bg-gradient-to-b from-[#eef2ff] via-[#dddddd] to-[#fff4f4] fade-in overflow-x-hidden break-words">
+
+    <!-- HEADER -->
+    <div id="idheader"></div>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <section id="contactos" class="pt-36 pb-20 px-6">
+
+      <!-- ENCABEZADO -->
+      <header class="text-center mb-16">
+        <span class="inline-block px-6 py-3 bg-[var(--azul-secundario)] text-[var(--azul-principal)] text-3xl font-bold rounded-full mb-4">
+          Aprende Paso a Paso
+        </span>
+
+        <h1 class="text-5xl sm:text-6xl font-extrabold mb-6 text-[var(--rosado-secundario)]">
+          Crear un Contacto
+        </h1>
+
+        <p class="text-2xl sm:text-3xl text-gray-600 max-w-3xl mx-auto">
+          Aprende a guardar números y hacer llamadas fácilmente
+        </p>
+      </header>
+
+      <!-- CONTENIDO -->
+      <main class="flex-grow max-w-4xl mx-auto px-6 sm:px-10 space-y-16">
+
+        <!-- CREAR CONTACTO -->
+        <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-xl border-t-8"
+             style="border-color: var(--azul-principal)">
+
+          <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-center text-[var(--azul-principal)]">
+            Guardar un Número 
+          </h2>
+
+          <ol class="text-2xl sm:text-3xl leading-relaxed space-y-14">
+
+            <li>1. Abra la aplicación <strong>Contactos</strong> o <strong>Teléfono</strong>.</li>
+
+            <div class="flex justify-center">
+              <img src="../../IMG/contactos.jpg"
+                   class="w-20 h-20 rounded-full shadow-lg"/>
+            </div>
+
+            <li>2. Toque el botón <strong>+</strong> o <strong>"Agregar contacto"</strong>.</li>
+
+            <div class="flex justify-center">
+              <img src="../../IMG/agregarContacto.jpg"
+                   class="w-full max-w-xs sm:max-w-md rounded-2xl shadow-xl"/>
+            </div>
+
+            <li>3. Escriba el <strong>nombre</strong> de la persona.</li>
+
+            <li>4. Escriba el <strong>número de teléfono</strong>.</li>
+
+            <li>5. Presione <strong>Guardar</strong>.</li>
+
+            <li> Revise que el número esté correcto antes de guardar.</li>
+
+          </ol>
+        </div>
+
+        <!-- LLAMAR A CONTACTO -->
+        <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-xl border-t-8"
+             style="border-color: var(--rosado-acento)">
+
+          <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-center text-[var(--rosado-secundario)]">
+            Llamar a un Contacto 
+
+          <ol class="text-2xl sm:text-3xl leading-relaxed space-y-14">
+
+            <li>1. Abra la aplicación <strong>Teléfono</strong> o <strong>Contactos</strong>.</li>
+
+            <li>2. Busque el nombre del contacto.</li>
+
+            <div class="flex justify-center">
+              <img src="../../IMG/buscarContacto.jpg"
+                   class="w-full max-w-xs sm:max-w-md rounded-2xl shadow-xl"/>
+            </div>
+
+            <li>3. Toque el contacto.</li>
+
+            <li>4. Presione el botón de <strong>llamar </strong>.</li>
+
+            <div class="flex justify-center">
+              <img src="../../IMG/llamar.jpg"
+                   class="w-full max-w-xs sm:max-w-md rounded-2xl shadow-xl"/>
+            </div>
+
+            <li>5. Espere a que la persona conteste.</li>
+
+          </ol>
+        </div>
+
+        <!-- EDITAR / ELIMINAR -->
+        <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-xl border-t-8"
+             style="border-color: var(--azul-principal)">
+
+          <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-center text-[var(--azul-principal)]">
+            Editar o Eliminar 
+          </h2>
+
+          <ol class="text-2xl sm:text-3xl leading-relaxed space-y-14">
+
+            <li>1. Abra el contacto guardado.</li>
+
+            <li>2. Toque <strong>Editar</strong> para cambiar datos.</li>
+
+            <li>3. Para eliminar, busque la opción <strong>"Eliminar"</strong>.</li>
+
+            <div class="flex justify-center">
+              <img src="../../IMG/editar.jpg"
+                   class="w-full max-w-xs sm:max-w-md rounded-2xl shadow-xl"/>
+            </div>
+
+            <li> Tenga cuidado al eliminar, no se puede recuperar fácilmente.</li>
+
+          </ol>
+        </div>
+
+      </main>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="idfooter"></div>
+
+    <script src="../../JS/layout.js"></script>
+  </body>
+</html>

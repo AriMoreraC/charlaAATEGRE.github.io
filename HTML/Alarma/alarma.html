@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarmas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../../CSS/index.css" />
+  </head>
+
+  <body class="min-h-screen flex flex-col bg-gradient-to-b from-[#eef2ff] via-[#dddddd] to-[#fff4f4] fade-in overflow-x-hidden break-words">
+
+    <!-- HEADER -->
+    <div id="idheader"></div>
+
+    <!-- SECCIÓN PRINCIPAL -->
+    <section id="alarmas" class="pt-36 pb-20 px-6">
+
+      <!-- ENCABEZADO -->
+      <header class="text-center mb-16">
+        <span class="inline-block px-6 py-3 bg-[var(--azul-secundario)] text-[var(--azul-principal)] text-3xl font-bold rounded-full mb-4">
+          Aprende Paso a Paso
+        </span>
+
+        <h1 class="text-5xl sm:text-6xl font-extrabold mb-6 text-[var(--rosado-secundario)]">
+          Alarmas en tu Celular
+        </h1>
+
+        <p class="text-2xl sm:text-3xl text-gray-600 max-w-3xl mx-auto">
+          Aprende a crear, activar y detener alarmas fácilmente
+        </p>
+      </header>
+
+      <!-- CONTENIDO -->
+      <main class="flex-grow max-w-4xl mx-auto px-6 sm:px-10 space-y-16">
+
+        <!-- CREAR ALARMA -->
+        <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-xl border-t-8"
+             style="border-color: var(--azul-principal)">
+
+          <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-center text-[var(--azul-principal)]">
+            Crear una Alarma 
+          </h2>
+
+          <ol class="text-2xl sm:text-3xl leading-relaxed space-y-14">
+
+            <li>1. Abra la aplicación <strong>Reloj</strong>.</li>
+
+            <div class="flex justify-center">
+              <img src="../../IMG/reloj.jpg"
+                   class="w-20 h-20 rounded-full shadow-lg"/>
+            </div>
+
+            <li>2. Toque la opción <strong>"Alarma"</strong>.</li>
+
+            <li>3. Presione el botón <strong>+</strong> o <strong>"Agregar"</strong>.</li>
+
+            <div class="flex justify-center">
+              <img src="../../IMG/agregarAlarma.jpg"
+                   class="w-full max-w-xs sm:max-w-md rounded-2xl shadow-xl"/>
+            </div>
+
+            <li>4. Seleccione la <strong>hora</strong> y <strong>minutos</strong>.</li>
+
+            <li>5. Presione <strong>Guardar</strong>.</li>
+
+            <li> Asegúrese de que el volumen esté alto.</li>
+
+          </ol>
+        </div>
+
+        <!-- ACTIVAR / DESACTIVAR -->
+        <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-xl border-t-8"
+             style="border-color: var(--rosado-acento)">
+
+          <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-center text-[var(--rosado-secundario)]">
+            Activar o Desactivar 
+          </h2>
+
+          <ol class="text-2xl sm:text-3xl leading-relaxed space-y-14">
+
+            <li>1. Busque la alarma creada.</li>
+
+            <li>2. Use el botón para <strong>encender o apagar</strong>.</li>
+
+            <div class="flex justify-center">
+              <img src="../../IMG/activar.jpg"
+                   class="w-full max-w-xs sm:max-w-md rounded-2xl shadow-xl"/>
+            </div>
+
+            <li>3. Si está encendida, sonará a la hora indicada.</li>
+
+          </ol>
+        </div>
+
+        <!-- DETENER -->
+        <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-xl border-t-8"
+             style="border-color: var(--azul-principal)">
+
+          <h2 class="text-4xl sm:text-5xl font-bold mb-6 text-center text-[var(--azul-principal)]">
+            Detener la Alarma 
+          </h2>
+
+          <ol class="text-2xl sm:text-3xl leading-relaxed space-y-14">
+
+            <li>1. Cuando suene la alarma, aparecerá en pantalla.</li>
+
+            <li>2. Toque <strong>"Detener"</strong>.</li>
+
+            <div class="flex justify-center">
+              <img src="../../IMG/detener.jpg"
+                   class="w-full max-w-xs sm:max-w-md rounded-2xl shadow-xl"/>
+            </div>
+
+            <li>3. También puede tocar <strong>"Posponer"</strong> para que suene después.</li>
+
+            <li>⚠️ Mantenga el celular con batería suficiente.</li>
+
+          </ol>
+        </div>
+
+      </main>
+    </section>
+
+    <!-- FOOTER -->
+    <div id="idfooter"></div>
+
+    <script src="../../JS/layout.js"></script>
+  </body>
+</html>
