@@ -254,56 +254,69 @@
 
     <!-- Grid de videos -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-
-      <!-- Video 1 -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border-4 border-gray-100">
-        <div class="relative pt-[56.25%] bg-gray-900 cursor-pointer" onclick="playVideo(this, 'https://www.youtube.com/embed/VIDEO_ID_1')">
-          <div class="video-placeholder absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-blue-600 to-pink-500 text-white hover:from-blue-700 hover:to-pink-600 transition-all">
-            <svg class="w-24 h-24 mb-4" viewBox="0 0 24 24" fill="currentColor">
-              <polygon points="5 3 19 12 5 21 5 3"></polygon>
-            </svg>
-            <span class="text-2xl font-bold">Toca para ver</span>
-          </div>
-        </div>
-        <div class="p-8">
-          <span class="inline-block px-5 py-2 bg-[var(--azul-secundario)] text-[var(--azul-principal)] text-2xl font-bold rounded-full mb-4">Empieza Aquí</span>
-          <h3 class="text-3xl font-extrabold text-gray-900 mb-3">Como usar esta pagina</h3>
-          <p class="text-2xl text-gray-500">Te explicamos cómo navegar por esta guía y encontrar toda la información.</p>
-        </div>
-      </div>
-
-      <!-- Video 2 -->
-      <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all border-4 border-gray-100">
-        <div class="relative pt-[56.25%] bg-gray-900 cursor-pointer" onclick="playVideo(this, 'https://www.youtube.com/embed/VIDEO_ID_2')">
-          <div class="video-placeholder absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-pink-500 to-blue-600 text-white hover:from-pink-600 hover:to-blue-700 transition-all">
-            <svg class="w-24 h-24 mb-4" viewBox="0 0 24 24" fill="currentColor">
-              <polygon points="5 3 19 12 5 21 5 3"></polygon>
-            </svg>
-            <span class="text-2xl font-bold">Toca para ver</span>
-          </div>
-        </div>
-        <div class="p-8">
-          <span class="inline-block px-5 py-2 bg-[var(--rosado-acento)] text-[var(--rosado-secundario)] text-2xl font-bold rounded-full mb-4">Tutorial Completo</span>
-          <h3 class="text-3xl font-extrabold text-gray-900 mb-3">Guía paso a paso del celular</h3>
-          <p class="text-2xl text-gray-500">Un recorrido completo por todas las funciones básicas de tu celular.</p>
-        </div>
-      </div>
-
-    </div>
+<!-- Video 1 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg border-4 border-gray-100">
+  
+  <div class="relative pt-[56.25%]">
+    <iframe 
+      class="absolute inset-0 w-full h-full rounded-t-2xl"
+      src="https://www.youtube.com/embed/ValtF9Ny6VY"
+      title="Cómo usar esta página"
+      allowfullscreen>
+    </iframe>
   </div>
-</section>
 
-<script>
-  function playVideo(container, url) {
-    // Reemplaza la placeholder por un iframe funcional
-    container.innerHTML = `
-      <iframe class="absolute inset-0 w-full h-full rounded-2xl shadow-xl" 
-              src="${url}" 
-              allowfullscreen>
-      </iframe>
-    `;
-  }
-</script>
+  <div class="p-8">
+    <span class="inline-block px-5 py-2 bg-[var(--azul-secundario)] text-[var(--azul-principal)] text-2xl font-bold rounded-full mb-4">
+      Empieza Aquí
+    </span>
+
+    <h3 class="text-3xl font-extrabold text-gray-900 mb-3">
+      Cómo usar esta página
+    </h3>
+
+    <p class="text-2xl text-gray-500 mb-4">
+      Te explicamos cómo navegar por esta guía y encontrar toda la información.
+    </p>
+
+    <a href="https://youtu.be/ValtF9Ny6VY" target="_blank"
+       class="text-xl font-bold text-blue-600 hover:underline">
+       Ver en YouTube
+    </a>
+  </div>
+</div>
+
+<!-- Video 2 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-lg border-4 border-gray-100">
+  
+  <div class="relative pt-[56.25%]">
+    <iframe 
+      class="absolute inset-0 w-full h-full rounded-t-2xl"
+      src="https://www.youtube.com/embed/9cr4LB71GCk"
+      title="Guía del celular"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="p-8">
+    <span class="inline-block px-5 py-2 bg-[var(--rosado-acento)] text-[var(--rosado-secundario)] text-2xl font-bold rounded-full mb-4">
+      Tutorial Completo
+    </span>
+
+    <h3 class="text-3xl font-extrabold text-gray-900 mb-3">
+      Guía paso a paso del celular
+    </h3>
+
+    <p class="text-2xl text-gray-500 mb-4">
+      Un recorrido completo por todas las funciones básicas de tu celular.
+    </p>
+
+    <a href="https://youtu.be/9cr4LB71GCk" target="_blank"
+       class="text-xl font-bold text-pink-600 hover:underline">
+       Ver en YouTube
+    </a>
+  </div>
+</div>
 
   <!-- Features Section -->
   <section class="py-20 px-6 bg-white">
